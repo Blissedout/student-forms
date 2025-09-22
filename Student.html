@@ -14,17 +14,23 @@
     <legend>Student Information</legend>
     <div>
       <label for="">Fullname</label>
-      <input type="text">
+      <input type="text" required placeholder="Enter your fullname">
      </div>
      <p></p>
      <div>
       <label for="">Email</label>
-      <input type="email">
+      <input type="email" required placeholder="Enter your email">
      </div>
      <p></p>
      <div>
       <label for="">Course Title</label>
-      <input type="text">
+      <input type="text" required placeholder="Enter your course title">
+     </div>
+     <p></p>
+     <div>
+      <label for="">Semester </label><br>
+            <input type="radio" name="Semester"><label for="">First</label><br>
+            <input type="radio" name="Semester"><label for="">Second</label>
      </div>
   </fieldset>
   <hr />
@@ -39,8 +45,76 @@
             <option value="Excellent">Excellent</option>
           </select>
       </div>
+      <p></p>
+      <div>
+        <label for="">Attendance</label><br>
+         <input type="checkbox">Online
+            <br>
+            <input type="checkbox">In-person
+            <br>
+            <input type="checkbox">Documents Download
+            <br>
+            <input type="checkbox">Video Recording
+      </div>
+      <p></p>
+      <div>
+        <label for="">What did you like about this course?</label>
+        <input type="checkbox">Course Content
+        <input type="checkbox">Course Instructor
+        <input type="checkbox">Course Material
+        <input type="checkbox">Course Duration
+        <input type="checkbox">Course Timing
+      </div>
+      <p></p>
+      <div>
+        <label for="">Any Suggestions?</label><br>
+        <textarea name="" id="" cols="0" rows="3"></textarea>
+      </div>
+      <p></p>
+      <div>
+        <label for="">File Upload</label>
+        <input type="file">
+      </div>
+      <hr /> 
     </fieldset>
+    <fieldset>
+      <legend>Extra</legend>
+      <div>
+        <label for="">Favourite Color</label>
+        <input type="color">Social Media
+      </div>
+      <p></p>
+      <div>
+        <label for="">Study Hours</label>
+        <input type="time">
+      </div>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
   </form>
-  
+  <hr />
+  <p></p>
+  <h1>Table Data</h1>
+    <table border="1">
+  <caption>Student Information</caption>
+    <thead>
+      <tr>
+        <th>SN</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Admission Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Blessing Udegbuna</td>
+        <td>Computer Science</td>
+        <td>udegbunablsing@gmail.com</td>
+        <td>08012345678</td>
+        <td>Admitted</td>
+      </tr> 
+    </table>
 </body>
 </html>
